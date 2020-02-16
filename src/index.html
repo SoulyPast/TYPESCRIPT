@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="bundle.js"></script>
+    <title>Document</title>
+</head>
+<style>
+ .padre {
+  background-color: rgb(201, 76, 76);
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  /* IMPORTANTE */
+  justify-content: center;
+  align-items: center;
+  display: table;
+
+}
+h1, p, select{
+    text-align: center;
+}
+
+</style>
+<body> 
+<div class="padre">
+    <h1>Coinbase:</h1>
+    <p><select id="monedas1" name="">
+    </select></p>
+    <p><input type="submit" id="submit" name="sumbit" value="Get"></p>
+    <p><b id="digual"></b><span id="dvalor"></span><a id="dnom"></a></p>
+    <p><b id="igual"></b><span id="valor"></span><a id="nom"></a></p>
+    <h1>Conversión:</h1>
+    <b id="perdefecte"></b>
+    <b id="namemoneda"></b>
+    <br>
+    <input id="num" type="number" value="0">
+    <label> = <span id="conv">0</span> Bitcoins</label>
+</div>
+</body>
+</html>
